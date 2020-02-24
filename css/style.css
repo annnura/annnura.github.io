@@ -1,0 +1,71 @@
+html{
+    position: relative;
+}
+body{
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+.jumbotron{
+    background-image: url('../img/portfolio/jumbotron.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -50px;
+    color: #eaeaea;
+    overflow: hidden;
+}
+.jumbotron img{
+    border:5px solid #eaeaea;
+}
+
+
+hr{
+    width: 250px;
+    border-top: 3px solid black;
+}
+
+section{
+    min-height: 600px;
+}
+.pKiri, .pKanan{
+    opacity: 0;
+    transform: translate(-50px,0) rotate(10deg);
+}
+.pKanan{
+    transform: translate(50px,0)rotate(-10deg);
+}
+.pKiri.pMuncul, .pKanan.pMuncul{
+    opacity: 1;
+    transform: translate(0,0);
+    transition: 2s;
+}
+
+.portfolio{
+    background-color: #eee;
+}
+.portfolio .thumbnail{
+    opacity: 0;
+    transition: .5s;
+    transform: translate(-100px,0);
+}
+.portfolio .thumbnail.muncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.contact{
+    height: 800px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-color: #333;
+    padding: 30px;
+}
+
+footer p{
+    color: blanchedalmond;
+    font-size: 1em;
+}
