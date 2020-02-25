@@ -28,10 +28,10 @@ section{
 }
 .pKiri, .pKanan{
     opacity: 0;
-    transform: translate(-50px,0) rotate(10deg);
+    transform: translate(-20px,0) rotate(10deg);
 }
 .pKanan{
-    transform: translate(50px,0)rotate(-10deg);
+    transform: translate(20px,0)rotate(-10deg);
 }
 .pKiri.pMuncul, .pKanan.pMuncul{
     opacity: 1;
